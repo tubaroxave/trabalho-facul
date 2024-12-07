@@ -1,0 +1,114 @@
+* { /* Fazendo o formato do site */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button{  /* estilizando lista, botões e links */
+  font-family:"Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+
+header { /* montando o header do site e estilizando tudo que tá ali*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  }
+
+.logo{
+  width: 4vw;
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{ /* Transição pra mudar de cor quando passar o mouse em cima */
+
+  transition: all 0,3s ease 0s;
+
+}
+
+
+.nav_links li a:hover{ /* A cor que vai aparecer quando colocar o mouse em cima dos links */
+
+  color: #2c78cecc
+
+}
+
+
+button{
+  padding: 9px 25px;
+  background-color: #2c78cecc;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0,3s ease 0s;
+}
+
+button:hover{   /*Efeito pra mudar de cor o botão quando colocar o mouse em cima, basicamente a mesma coisa alí de cima só que sem a transição e só uma mudança brusca */
+  background-color: #2561a7cc
+}
+
+.main{    /* Estilização do "corpo" do site */
+
+  background-color: #a9b8ff
+}
+
+.main__container {        /*Essa chave inteira é só pra alinhar tudo */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  height: 90vh;
+  background-color: #24252A;
+  z-index: 1;
+  width: 100vw;
+  max-width: 100%;
+  padding: 0 50px;
+}
+
+.main__img--container{ /* espelha a imagem */
+
+transform: scaleX(-1)
+
+}
+
+
+
+.main__content h1{     /* Customização especifica do Header 1, 2 e Parágrafo  */
+  font-size: 3vw;
+  color: white;
+}
+  
+.main__content h2{
+
+  font-size: 1vw;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.main__content h2:hover{  /* Transiçãozinha no parágrafo pra mudar de cor */
+
+color: #2c78cecc
+
+}
+
+.main__content p{
+
+font-size: 1vw;
+color: white
+
+}
